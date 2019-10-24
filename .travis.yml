@@ -1,9 +1,7 @@
 language: node_js
 node_js:
- - node
+  - node
 install:
- - npm
+  - npm install
 script:
- - npm test
-notifications:
- email: false
+  - npm run lint
