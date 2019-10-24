@@ -6,7 +6,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static(__dirname));
 app.set("view engine", "hbs");
 app.get("/", urlencodedParser, function(request, response) {
-  response.sendFile(__dirname + "/Lab3.html");
+  response.sendFile(__dirname + "/index.html");
 });
 app.post("/", (req, res) => {
   res.redirect(307, "/answer");	
