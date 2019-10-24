@@ -4,7 +4,8 @@
   "description": "Node_JS_lab",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint .",
+    "build": "node build/build js --output public"
   },
   "author": "Sergey Galuzov",
   "license": "ISC",
