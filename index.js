@@ -15,7 +15,6 @@ app.post("/answer", urlencodedParser, function(request, response) {
 	if (!request.body) return response.sendStatus(400);
 	response.render("answer.hbs", {
 		res1: request.body.res1,
-
 		res2: request.body.res2,
 		res3: request.body.res3,
 		res4: request.body.res4
