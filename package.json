@@ -4,6 +4,7 @@
   "description": "Node_JS_lab",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "eslint ."
   },
   "author": "Sergey Galuzov",
