@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+		<title>Lab3</title>
+	</head>
+	<body>
+		<script src="Lab3.js"></script>
+		<form method="POST" name="form">
+			<h1>Розгалуження в програмах</h1>
+			<p>Обчислення максимального значення</p>
+			Число 1: <input type="text" size="8" name="num1" /><br />
+			Число 2: <input type="text" size="8" name="num2" /><br />
+			Число 3: <input type="text" size="8" name="num3" /><br />
+			Максимальне значення = <input type="text" size="8" name="res1" /><br />
+			<input type="button" value="Визначити" onClick="maxval(form)" />
+			<input type="reset">
+			<hr>
+			<p>Definition the amount of max numbers in the sequence of 5 numbers.</p>
+			Number 1 = <input type="text" size="8" name="number" /> Number 2 =
+			<input type="text" size="8" name="number" /> Number 3 =
+			<input type="text" size="8" name="number" /> Number 4 =
+			<input type="text" size="8" name="number" /> Number 5 =
+			<input type="text" size="8" name="number" /> <br /><br />
+			<input
+				type="button"
+				value="Define"
+				onClick="max_of_5(form.elements.number)"
+				name="Define"
+			/>
+			The amount of max numbers =
+			<input type="text" size="8" id="Answer" name="res2" />
+			<hr />
+			<p>Check if we can build a triangle with these 3 sides?</p>
+			Side 1 = <input type="text" size="8" name="number" /> Side 2 =
+			<input type="text" size="8" name="number" /> Side 3 =
+			<input type="text" size="8" name="number" /> <br /><br />
+			<input
+				type="button"
+				value="Check"
+				onClick="check_triangle(form.elements.number)"
+			/>
+			<input type="text" size="8" id="Check" name="res3" />
+			<hr />
+			<p>Check the quarter of the point.</p>
+			Coordinate x = <input type="text" size="8" name="number_x" /> Coordinate y
+			= <input type="text" size="8" name="number_y" /> <br /><br />
+			<input
+				type="button"
+				value="Check quarter"
+				onClick="check_quarter(form.number_x.value, form.number_y.value)"
+			/>
+			<input type="text" size="12" id="Check_quarter" name="res4" />
+			<br /><br /><br />
+			<input type="submit" value="Отправить" />
+		</form>
+	</body>
+</html>
