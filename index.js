@@ -10,7 +10,7 @@ app.get("/", urlencodedParser, function(request, response) {
   response.sendFile(__dirname + "/index.html");
 });
 app.post("/", (req, res) => {
-  res.redirect(307, "/answer");	
+  res.redirect(307, "/answer");
 });
 app.post("/answer", urlencodedParser, function(request, response) {
   if (!request.body) return response.sendStatus(400);
